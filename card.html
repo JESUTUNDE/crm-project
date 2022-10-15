@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM PLUGIN</title>
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR SECTION -->
+    <nav>
+        <div class="navbar-container">
+            <div>
+                <h1 class="navbar1">CSOs Inst Request</h1>
+            </div>
+            <div>
+                <h6>Live Environment <u class="back">Back</u></h6>
+            </div>
+            
+        </div>
+        <div class="second-navbar">
+            <div class="staff-name">
+                <h5 class="staff-name">Good morning IGBOJIONU, ADAOLISA</h5>
+            </div>
+            <div class="branch-details">
+                <h5 class="branch-details">Branch (Cemp) in NG0020090 - EZIUKWU RD - ABA</h5>
+            </div>
+            <div>
+                <h5>Home | Help | Log out</h5>
+            </div>
+        </div>
+        <div id="form">
+            <form action="index.html" id="form_action" method="post" name="myForm" onsubmit="return validate()">
+                <div>
+                    <label for="account number">Select Account</label>
+                    <input type="number" max-length="10" name="account number" id="accountNumber" placeholder="Enter Account Number">
+                </div>
+                <div>
+                    <p style="text-align: right;">Base Number:  <span id="baseNumber">12345</span></p>
+                </div>
+                <div>
+                    <label for="title">Title:</label>
+                    <!-- <input type="text" name="title" id="title" placeholder="Title"> -->
+                    <select name="title" id="title">
+                        <option value="Mr">Mr</option>
+                        <option value="Miss">Miss</option>
+                        <option value="Mrs">Mrs</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="gender">Gender:</label>
+                    <!-- <input type="text" name="title" id="title" placeholder="Title"> -->
+                    <select name="gender" id="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <!-- <option value="Mrs">Mrs</option> -->
+                    </select>
+                </div>
+                <div>
+                    <label for="customer's name">Display customer's name:</label>
+                    <input type="text" name="customers name" id="title" placeholder="Customer's name">
+                </div>
+                <div>
+                    <label for="last name">Card Lastname:</label>
+                    <input type="text" name="Last name" id="card Lastname" required>
+                </div>
+                <div>
+                    <label for="first name">Card Firstname:</label>
+                    <input type="text" name="First name" id="card Firstname" required>
+                </div>
+                <div>
+                    <label for="Address">Address:</label>
+                    <input type="text" name="Address" id="Address">
+                </div>
+                <div>
+                    <label for="Address">Town:</label>
+                    <input type="text" name="Town" id="Town">
+                </div>
+                <div>
+                    <label for="country">State - Country:</label>
+                    <input type="text" name="country" id="country">
+                </div>
+                <div>
+                    <label for="Email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Email">
+                </div>
+                <div>
+                    <label for="phone number">Mobile:</label>
+                    <input type="tel" name="phone number" id="phone-number" placeholder="123 456 7890" required>
+                </div>
+                <div>
+                    <label for="Card number">PAN:</label>
+                    <input type="number" name="PAN" id="PAN">
+                </div>
+                
+                <div id="submit2">
+                    <a href="#" id="submit" onclick="checker()">Submit</a>
+                </div>
+            </form>
+
+        </div>
+    </nav>
+
+
+
+    <!-- CRM Plugin -->
+    <div class="crm-plugin">
+    <div class="wrapper">
+        <div class="branch">
+            <!-- <img src="assests/Sterling_Bank_Logo_Straight-2.png" alt=""> -->
+            <div class="container1">
+            <img src="assests/close-svgrepo-com.svg" alt="" id="cancel" class="btn1">
+        </div>
+
+            <h1> <strong> Add task to CRM</strong></h1>
+            <p> This action will help you automatically update your activities on CRM. <br> Some portions will be auto populated but ensure you cross check </p>
+             
+        </div>
+            <h3>Branch: </h3>
+    
+            
+            <form action="" class="form">
+
+                <div class="row">
+                    <div class="col">
+                        <label for="">Base Number *</label><br>
+                    <input type="text" required="required" focus="autofocus"  id="plugin_baseNumber"> 
+                    </div>
+
+                    <div class="col">
+                        <label for="">Account Number *</label><br>
+                    <select name="" id="plugin_accountNumber">
+                        <option required="required" focus="autofocus" value="0068309362">0068309362</option>
+                        <option required="required" focus="autofocus" value="0012256145">0012256145</option>
+                        <option required="required" focus="autofocus" value="0002349986">0002349986</option>
+                        <option required="required" focus="autofocus" value="0099098756">0099098756</option>
+                    </select>
+                    </div>
+
+                   
+                </div>
+                        
+                <div class="row">
+                        <div class="col">
+                            <label for="">Case type*</label><br>
+                            <select name="" id="caseType" >
+                                <option value=""> Request</option>
+                                <!-- <option value=""> Complaint</option> -->
+                                <!-- <option value=""> Enquiry</option>
+                                <option value=""> Request for new card</option>
+                                <option value=""> One Bank</option>
+                                <option value=""> SMS Notification</option> -->
+                            </select>
+                        </div>
+            
+                        <div class="col">
+                            <label for="">Case Category*</label><br>
+                            <select name="" id="category">
+                                <option value=""> Account</option>
+                                <option value=""> Account management</option>
+                                <option value=""> ATM transaction (local)</option>
+                                <option value=""> Cards</option>
+                                <option value=""> Internet Bankin Service</option>
+                                <option value=""> Limit Ehancement</option>
+                                <option value="">Loan </option>
+                                <option value="">MICR </option>
+                                <option value="">SPECTA Basic </option>
+                                <option value="">SPECTA Xtreme </option>
+                                <option value="">Sterling Pro Request </option>
+                                <option value="">Switch </option>
+                                <option value="">Transaction Confirmation </option>
+                                <option value="">Whatsapp Banking </option>
+                                <option value="">USSD </option>
+                                
+                                
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Case sub Category*</label>
+                            <select name="" id="subCategory" >
+                                <option value="">Account Information </option>
+                                <option value="">Account Blockage</option>
+                                <option value="">Account Closure </option>
+                                <option value=""> Account Mandate</option>
+                                <option value="">Account Migration </option>
+                                <option value="">Account Reactivation </option>
+                                <option value="">BVN Enrolment </option>
+                            
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="">Case minor Category*</label><br>
+                        <select name="" id="minorCategory" >
+                            <div >
+                                <option value="">Account opening </option>
+                                <option value="">Date of Birth </option>
+                                <option value=""> Email Address</option>
+                                <option value="">Mobile Number </option>
+                                <option value="">Residential Address </option>
+                            </div>
+                        </select>
+        
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        
+                        <textarea name="" id="" cols="" rows="5" placeholder="Description *" required="required"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <!-- <br><label for="">Assign case</label>
+                                <select  name="" id="">
+                                    <option value="" >Resolved</option> -->
+                                    <!-- <option value="">Card Operation</option>
+                                    <option value="">Channels and Switching</option> -->
+                                </select>
+                            </div>
+                    </div>
+                    <!-- <input type="submit" value="Resolve" class="submit"> -->
+                <!-- <a href="successpg.html"> <button type="submit" value="Submit" class="submit">Submit</button> </a> -->
+
+                <button type="submit" value="Submit" class="submit"><a href="successpg.html">Submit</a></button></a><br><br>
+                    
+                
+                <!-- <input type="submit" value="Submit" class="submit"> -->
+                </form>
+            </div>
+        
+        </div>
+    </div>
+    <!-- End  CRM Plugin -->
+
+    <script src="card.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

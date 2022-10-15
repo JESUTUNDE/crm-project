@@ -1,0 +1,62 @@
+@font-face {
+    font-family: Cocon;
+    src: url(Cocon-Regular-Font.otf);
+  }
+
+body{
+    text-align: center;
+    background-color: rgb(189, 186, 186);
+    padding-top: 90px;
+}
+
+#container{
+    max-width: 420px;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px 20px 100px 20px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 20px rgb;    
+
+}
+
+
+.mark{
+ width: 30%;
+ margin: 0 0 0 100px;
+ position: absolute;
+ 
+}
+
+.text{
+    text-align: unset;
+    justify-content: baseline;
+}
+
+.h{
+    font-family: cocon;
+}
+.p{
+    font-family:Helvetica, sans-serif
+}
+.cancel1{
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    right: 25px;
+    /* margin-right: 120px;
+    margin-bottom: 350px; */
+}
+
+.cancel1 button{
+    opacity: 1;
+    border: none;
+    background-color: transparent;
+}
+
+.cancel1 button:hover{
+    opacity: 1;
+    border: none;
+    background-color:white;
+}

@@ -1,0 +1,88 @@
+
+@font-face {
+    font-family: Cocon;
+    src: url(Cocon-Regular-Font.otf);
+  }
+  /* @font-face {
+    font-family: Cocon;
+    src: url(Helvetica\ Neue\ W01\ 66\ Medium\ It.otf);
+  } */
+*{
+    box-sizing: border-box;
+}
+
+
+.crm-plugin{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    background-color: rgba(128, 128, 128, 0.63);
+    font-family: Helvetica, sans-serif;
+    display:  none;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height:  100vh;
+}
+h1{
+    font-family: Cocon;
+}
+p{
+    line-height: 25px;
+}
+
+.wrapper{
+    background-color: white;
+    max-width: 650px;
+    height: auto;
+    padding: 5px 35px 50px 35px;
+margin: 0 auto;
+/* box-shadow: rgb(20, 244, 244); */
+border-radius: 10px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col{
+    width: 48%;
+    margin-bottom: 20px;
+}
+.row .col input {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.row textarea {
+    width: 100%;
+    border-radius: 5px;
+}
+.row .col select {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+}
+.submit{
+    background-color: rgb(20, 20, 29);
+    color: white;
+    border-radius: 5px;
+    float: right;
+    height: 35px;
+    width: 100px;
+}
+
+.submit:hover{
+    color: white;
+    text-decoration: none;
+    background-color:  rgb(90, 90, 100);
+}
+
+#cancel{
+    width: 20px;
+    margin-left: 99%;
+    margin-top: 15px;
+}
