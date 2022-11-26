@@ -11,23 +11,30 @@
 <div id="container">
 
     <div class="cancel1">
-        <button class="btn"><a href="card.html"><img src="assests/close-svgrepo-com.svg" alt=""></a></button>
+        <button class="btn"><a href="index.html"><img src="assests/close-svgrepo-com.svg" alt="" id="can2"></a></button>
     </div>
 
 
     <div>
-    <img src="assests/greensuccess-icon.jfif" alt="">
+    <img src="assests/svg-info.png" alt="">
 </div>
 
 <div class="text">
     <h2 class="h">Case created successfully</h2>
-    <div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Resolution feedback"></textarea>
-    </div>
-    <div class="p">
-        <a href="card.html"> <button>Close case</button></a>
-    </div>
-   
+
+    <form action="index.html" id="form">
+        <div>
+            <textarea name="" id="comment" cols="30" rows="10" placeholder="Resolution feedback"></textarea>
+            <div class="error"></div>
+        </div> 
+        <div class="btn">
+                
+                <div class="p">
+                     <button id="submit" type="submit">Close case</button>
+                </div>
+        </div>
+    </form>
+
 </div>
 </div>
 

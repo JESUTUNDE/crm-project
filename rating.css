@@ -11,25 +11,27 @@
  }
 
  body{
-  background-color: rgb(189, 186, 186);
-  padding: 20px 20px 100px 20px;
-  width: 150px;
-  margin: 20px;
+   background-image: url(assests/saf.PNG);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   padding: 20px 20px 100px 20px;
+   width: 150px;
+   margin: 20px;
  }
 
  .container{
-  background-color:white;
+  background-color:rgb(226, 221, 221);
   border-radius: 10px;
   width: 230px;
   padding-right: 110px;
-  padding-top: 25px; 
-  padding-left: 35px;  
+  padding-top: 25px;
+  padding-left: 35px;
   padding-bottom: 30px;
   bottom: 50px;
   right: 50px;
   position: absolute;
  }
- 
+
  .r5{
   background-color: rgb(238, 215, 218);
   width: 7%;
@@ -70,3 +72,9 @@
   text-align: center;
   border-radius: 6px;
  }
+ .cancel1{
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 55px;
+}

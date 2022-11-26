@@ -4,14 +4,17 @@
 }
 
 body{
-    background-color: grey;
+  /* background-color: grey; */
+background-image: url(assests/saf.PNG);
+background-repeat: no-repeat;
+background-size: 100%;
 }
 
 .container{
     /* max-width: 400px; */
     margin-top: 20px;
     box-shadow: rgb(53, 50, 50);
-    background-color: white;
+    background-color:rgb(226, 221, 221);
     border-radius: 10px;
     padding: 20px;
     text-align: justify;
@@ -47,11 +50,17 @@ body{
     cursor: pointer;
 }
 
+.backg {
+    background-image: url(assests/saf.PNG);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 .container1 {
     max-width: 400px;
     margin-top: 20px;
     box-shadow: rgb(53, 50, 50);
-    background-color: white;
+    background-color:rgb(226, 221, 221);
     border-radius: 10px;
     padding: 20px;
     text-align: justify;
@@ -64,9 +73,42 @@ body{
     width: 100%;
 }
 .container .btn{
-   
+
     width: 50%;
     justify-content: space-between;
     display: flex;
     float: right;
 }
+
+/* REVIEW TEXTAREA*/
+
+.failure-icon,
+.error {
+  color: red;
+}
+
+.success-icon {
+  color: green;
+}
+
+.error {
+  font-size: 14.5px;
+  margin-top: 5px;
+}
+
+.click{
+    
+}
+img{
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    position: absolute;
+}
+/* .cancel1{
+    width: 30px;
+    height: 90px;
+    position: absolute;
+    right: 20px;
+    size: 20px;
+  } */

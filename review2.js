@@ -55,37 +55,6 @@ let accountNumber = id("accountNumber"),
 
 
 
-const x = document.getElementById('container')
-const y = document.querySelector('.btn')
-function checker() {
-    let text;
-   if(confirm('confirm you have done due diligence and leave a comment on CRM!')) {
-    // Update CRM Account Number
-    // const accountNumber = document.querySelector('#accountNumber');
-    // const plugin_accountNumber = document.querySelector('#plugin_accountNumber');
-    // plugin_accountNumber.selectedIndex  = getOption(plugin_accountNumber, accountNumber)
-    // // Update CRM BASE Number
-    // const cardBaseNumber = document.querySelector('#baseNumber');
-    // const pluginBaseNumber = document.querySelector('#plugin_baseNumber');
-    // pluginBaseNumber.value = cardBaseNumber.textContent;
-    // plugin_accountNumber.value = accountNumber.value
-    document.querySelector('.crm-plugin').style.display = 'block';
-
-    if(ok){
-        text = "Push to CRM!";    
-        }else{
-            text = 'Card linked and Card Operations notified!';
-        }   
-    }
-   document.getElementById('submit').innerHTML = text;
-}
-
-y.addEventListener("click" , () => {
-x.style.display = "none";
-y.style.display = 'none';
-
-})
-
 ////////// REVIEW TEXTAREA
 let name = (id) => document.getElementById(id);
 let err = (classes) => document.getElementsByClassName(classes);
@@ -105,7 +74,7 @@ let err = (classes) => document.getElementsByClassName(classes);
           else {
             errorMsg[serial].innerHTML = "";
             id.style.border = "2px solid green";
-            window.location.href="case_close.html"
+            window.location.href="review2.html"
        }
   }
   Reviewform.addEventListener("submit", (e) => {
