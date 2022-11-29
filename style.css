@@ -74,6 +74,7 @@ border-radius: 10px;
     height: 35px;
     width: 100px;
     padding-top: 10px;
+    text-align: center;
 }
 
 .submit:hover{
@@ -84,7 +85,7 @@ border-radius: 10px;
 
 #cancel{
     width: 20px;
-    margin-left: 99px%;
+    margin-left: 99px;
     margin-top: 15px;
 }
 
@@ -201,10 +202,10 @@ a{
     height: 40px;
     text-decoration: none;
 }
-input[type="number"]::-webkit-outer-spin-button,
+/* input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button{
     -webkit-appearance:none;
-}
+} */
 input{
     border-radius: 4px;
     height: 20px;

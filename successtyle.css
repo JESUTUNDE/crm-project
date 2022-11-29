@@ -17,7 +17,7 @@ body{
     border-radius: 10px;
     background-color: white;
     text-align: center;
-    box-shadow: 20px rgb;    
+    /* box-shadow: 1px 1px 1px 1px;     */
 
 }
 
@@ -31,7 +31,7 @@ body{
 
 .text{
     text-align: unset;
-    justify-content: baseline;
+    /* justify-content: baseline; */
 }
 
 .h{

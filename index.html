@@ -12,7 +12,7 @@
     <nav>
         <div class="navbar-container">
             <div>
-                <h1 class="navbar1">CSOs Inst Request</h1>
+                <h2 class="navbar1">CSOs Inst Request</h2>
             </div>
             <div>
                 <h6>Live Environment <u class="back">Back</u></h6>
@@ -33,13 +33,13 @@
         <div id="form">
             <form action="index.html" id="form_action" method="post" name="myForm" > <!--onsubmit="return validate()"-->
                 <div>
-                    <label for="account number">Input Account Number </label>
+                    <label for="accountNumber">Input Account Number </label>
                     <input type="tel"  name="accountNumber" id="accountNumber" placeholder="0020044461">
                     <div class="error"></div>
                 </div>
                 <div>
                     <label for="title">Title:</label>
-                    <select select="selected" name="title" id="title">
+                    <select name="title" id="title">
                         <option value="Mr">Mr</option>
                         <option value="Miss">Miss</option>
                         <option value="Mrs">Mrs</option>
@@ -47,7 +47,7 @@
                    <div class="error"></div>
                   </div>
                   <div>
-                    <label for="username">Gender</label>
+                    <label>Gender</label>
                                 <select name="gender" id="gender">
                                     <option value="Male">Male</option>
                                     <option value="Female">Male</option>
@@ -56,43 +56,43 @@
                     <div class="error"></div>
                 </div>
                 <div>
-                    <label for="cardFirstName">Card First name</label>
-                    <input type="text" name="username" id="cardFirstName" placeholder="Joy Shaheb" />
+                    <label>Card First name</label>
+                    <input type="text" name="username" id="cardFirstName" placeholder="Joy Shaheb" >
                     <div class="error"></div>
         </div>
         <div>
-            <label for="cardLastName"> Card Last name</label>
-                    <input type="text" name="email" id="cardLastName" placeholder="Abdulsalam" />
+            <label> Card Last name</label>
+                    <input type="text" name="email" id="cardLastName" placeholder="Abdulsalam" >
             <div class="error"></div>
         </div>
         <div>
-            <label for="address">Address</label>
-                        <input type="text" name="account" id="address" placeholder="0020044461" />
+            <label>Address</label>
+                        <input type="text" name="account" id="address" placeholder="0020044461" >
            <div class="error"></div>
         </div>
         <div>
-            <label for="town">Town:</label>
+            <label>Town:</label>
             <input type="text" name="town" id="town" placeholder="Lagos">
             <div class="error"></div>
         </div>
         <div>
-            <label for="country">State - Country:</label>
+            <label>State - Country:</label>
             <input type="text" name="country" id="country" placeholder="Nigeria">
             <div class="error"></div>
         </div>
         <div>
-            <label for="Email">Email:</label>
+            <label>Email:</label>
             <input type="email" name="email" id="email" placeholder="Enter Email">
             <div class="error"></div>
         </div>
 
         <div>
-            <label for="phone number">Card PAN:</label>
+            <label>Card PAN:</label>
             <input type="text" name="pan" id="pan" placeholder="123 456 7890">
             <div class="error"></div>
         </div>
         <div>
-            <label for="phone number">Phone Number :</label>
+            <label>Phone Number :</label>
 
             <input type="text"  name="pan" id="phoneNumber" placeholder="123 456 7890">
             <div class="error"></div>
@@ -126,17 +126,17 @@
 
                 <div class="row">
                     <div class="col">
-                        <label for="">Base Number *</label><br>
-                    <input type="text" value="783893" required="required" focus="autofocus"  id="plugin_baseNumber">
+                        <label>Base Number *</label><br>
+                    <input type="text" value="783893" required="required"   id="plugin_baseNumber">
                     </div>
 
                     <div class="col">
-                        <label for="">Account Number *</label><br>
-                    <select name="" id="plugin_accountNumber">
-                        <option required="required" focus="autofocus" value="0068309362">0068309362</option>
-                        <option required="required" focus="autofocus" value="0012256145">0012256145</option>
-                        <option required="required" focus="autofocus" value="0002349986">0002349986</option>
-                        <option required="required" focus="autofocus" value="0099098756">0099098756</option>
+                        <label>Account Number *</label><br>
+                    <select name="plugin_accountNumber" id="plugin_accountNumber">
+                        <option   value="0068309362">0068309362</option>
+                        <option   value="0012256145">0012256145</option>
+                        <option   value="0002349986">0002349986</option>
+                        <option   value="0099098756">0099098756</option>
                     </select>
                     </div>
 
@@ -145,9 +145,9 @@
 
                 <div class="row">
                         <div class="col">
-                            <label for="">Case type*</label><br>
-                            <select name="" id="caseType" >
-                                <option value=""> Request</option>
+                            <label for="caseType">Case type*</label><br>
+                            <select name="caseType" id="caseType" >
+                                <option value="Request"> Request</option>
                                 <!-- <option value=""> Complaint</option> -->
                                 <!-- <option value=""> Enquiry</option>
                                 <option value=""> Request for new card</option>
@@ -157,15 +157,15 @@
                         </div>
 
                         <div class="col">
-                            <label for="">Case Category*</label><br>
-                            <select name="" id="category">
-                                <option value=""> Cards</option>
-                                <option value=""> Account</option>
-                                <option value=""> Account management</option>
-                                <option value=""> ATM transaction (local)</option>
-                                <option value=""> Internet Bankin Service</option>
-                                <option value=""> Limit Ehancement</option>
-                                <option value="">Loan </option>
+                            <label>Case Category*</label><br>
+                            <select name="Category" id="category">
+                                <option value="Cards"> Cards</option>
+                                <option value="Account"> Account</option>
+                                <option value="AccountManagement"> Account management</option>
+                                <option value="AtmTransaction"> ATM transaction (local)</option>
+                                <option value="InternetBanking"> Internet Bankin Service</option>
+                                <option value="LimitEhancement"> Limit Ehancement</option>
+                                <!-- <option value="">Loan </option>
                                 <option value="">MICR </option>
                                 <option value="">SPECTA Basic </option>
                                 <option value="">SPECTA Xtreme </option>
@@ -173,7 +173,7 @@
                                 <option value="">Switch </option>
                                 <option value="">Transaction Confirmation </option>
                                 <option value="">Whatsapp Banking </option>
-                                <option value="">USSD </option>
+                                <option value="">USSD </option> -->
 
 
                             </select>
@@ -181,28 +181,29 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <label for="">Case sub Category*</label>
-                            <select name="" id="subCategory" >
-                                <option value="">New Card Request </option>
-                                <option value="">card Blockage</option>
-                                <option value="">Card Reissuance</option>
-                                <option value=""> Card Activation</option>
+                            <label>Case sub Category*</label>
+                            <select name="SubCategory" id="subCategory" >
+                                <option value="NewCardRequest">New Card Request </option>
+                                <option value="CardBlockage">card Blockage</option>
+                                <option value="CardReissuance">Card Reissuance</option>
+                                <option value="CardActivation"> Card Activation</option>
                                 <!-- <option value="">Account Migration </option>
                                 <option value="">Account Reactivation </option>
                                 <option value="">BVN Enrolment </option> -->
 
                             </select>
                         </div>
+                    
                         <div class="col">
-                            <label for="">Minor Category*</label><br>
-                        <select name="" id="minorCategory" >
-                            <div >
-                                <option value="">Master Card Request</option>
-                                <option value="">Verve Card Request</option>
-                                <option value=""> Credit Card Request</option>
-                                <option value="">Platinum Card Request</option>
-                                <option value="">World Elite Card Request </option>
-                            </div>
+                            <label for="minorCategory">Minor Category*</label><br>
+                        <select name="minorCategory" id="minorCategory" >
+                            
+                                <option value="MasterCardRequest">Master Card Request</option>
+                                <option value="VerveCardRequest">Verve Card Request</option>
+                                <option value="CreditCardRequest"> Credit Card Request</option>
+                                <option value="PlantnumCardRequest">Platinum Card Request</option>
+                                <option value="WorldEliteCard">World Elite Card Request </option>
+                            
                         </select>
 
                         </div>
@@ -210,7 +211,7 @@
                     <div class="row">
 
 
-                        <textarea name="" id="" cols="" rows="5" placeholder="Description *" required="required"></textarea>
+                        <textarea name="Description" id="Description" cols="1" rows="5" placeholder="Description *" required="required"></textarea>
                         </div>
                         <div class="row">
                             <div class="col">
@@ -219,19 +220,19 @@
                                     <option value="" >Resolved</option> -->
                                     <!-- <option value="">Card Operation</option>
                                     <option value="">Channels and Switching</option> -->
-                                </select>
+                                <!-- </select> -->
                             </div>
                     </div>
                     <!-- <input type="submit" value="Resolve" class="submit"> -->
                 <!-- <a href="successpg.html"> <button type="submit" value="Submit" class="submit">Submit</button> </a> -->
 
                           <!-- <button type="submit" value="Submit" id="submitb">Submit<a href="successpg.html"></a></button><br><br> -->
-                          <button type="submit" value="Submit" id="submitb">Submit<a href="successpg.html"></a></button><br><br>
+                          <a href="successpg.html" id="submitb">Submit</a><br><br>
                     
 
                 <!-- <input type="submit" value="Submit" class="submit"> -->
                 </form>
-            </div>
+            <!-- </div> -->
 
         </div>
     </div>
